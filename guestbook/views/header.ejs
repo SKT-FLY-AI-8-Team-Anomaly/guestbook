@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Express Guestbook</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    </head>
-    <body class="container">
-        <h1>
-            수정수정수정
-            <a href="/new-entry" class="btn btn-primary pull-right"> Write in the guestbook </a>
-        </h1>
-    </body>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>Express Guestbook</title>
+
+    <!-- Bootstrap 3 -->
+    <link
+        rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <style>
+        body {
+            background-color: #f5f6f8;
+        }
+
+        .guestbook-header {
+            margin-top: 80px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .guestbook-title {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="guestbook-header clearfix">
+            <h1 class="guestbook-title pull-left">
+                📖 Express Guestbook
+            </h1>
+
+            <a
+                href="/new-entry"
+                class="btn btn-primary btn-lg pull-right"
+            >
+                ✍ 글 작성하기
+            </a>
+
+            <div class="clearfix"></div>
+
+            <p class="subtitle">
+                자유롭게 한 줄 남겨주세요 🙂
+            </p>
+        </div>
+    </div>
+</body>
 </html>
